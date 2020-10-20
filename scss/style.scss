@@ -72,14 +72,15 @@ $background: #121212;
 /* Section */
 .container__section {
     width: 100%;
-    height: 567px;
+    height: 617px;
     background: $background;
     display: grid;
     grid-template-columns: 3fr 3fr;
+    /* ПЕРЕДЕЛАТЬ ВЫСОТУ */ 
 }
 .section__circle {
     width: 100%;
-    height: 567px;
+    height: 617px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +110,7 @@ $background: #121212;
 }
 .text {
     width: 100%;
-    height: 567px;
+    height: 617px;
     display: flex;
     .text__decor {
         justify-content: end;
@@ -124,6 +125,7 @@ $background: #121212;
     transform: translateY(170px);
     mix-blend-mode: difference;
     padding: 60px 0 0 0;
+     /* ПЕРЕДЕЛАТЬ */
     h1 {
         color: $color__org__red;
         text-transform: uppercase;
@@ -158,6 +160,7 @@ $background: #121212;
     width: 90px;
     height: 18px;
     transform: translate(39em, 43em);
+    /* ПЕРЕДЕЛАТЬ */
 }
 .glitch {
     position: relative;
@@ -219,7 +222,8 @@ $background: #121212;
     font-size: 150%;
     text-align: start;
     white-space: nowrap;
-    overflow: hidden;transform: translateY(-50%);
+    overflow: hidden;
+    transform: translateY(-50%);
 }
 /*Animation*/
 .anim-typewriter {
