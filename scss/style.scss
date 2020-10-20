@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$color__red: #ED1212;
+$color__org__red: red;
+$color__white: #ffffff;
+$color__grey: grey;
+$background: #121212;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+}
+/* Header */
+.container__header {
+    width: 100%;
+    height: 91px;
+    display: flex;
+    background: $background;
+}
+.logo__header {
+    width: 17%;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px 0 0 10px;
+    h2.title__header {
+        justify-content: center;
+        align-self: center;
+        z-index: 10;
+        color: $color__red;
+    }
+    div.logos__header {
+        display: flex;
+        justify-content: start;
+        align-self: center;
+        z-index: 1;
+    }
+}
+.header__menu {
+    height: 91px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+    li.menu__link {
+        list-style-type: none;
+        &:nth-child(1) {
+            margin-left: 170px;
+        }
+        &:nth-child(5) {
+            margin-right: 50px;
+        }
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: grey;
+            font-family: Helvetica;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 3px;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                color: $color__red;
+            }
+        }
+    }
+}
+/* Header */
+
+/* Section */
+.container__section {
+    width: 100%;
+    height: 567px;
+    background: $background;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}
+.section__circle {
+    width: 100%;
+    height: 567px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ring {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        img {
+            width: 370px;
+            height: 370px;
+        }   
+    }
+    .ringOne img {
+        animation: rotateFirstRing 2s linear infinite;
+    }
+    .ringTwo img {
+        animation: rotateFirstRing 8s linear infinite;
+    }
+    @keyframes rotateFirstRing {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+.text {
+    width: 100%;
+    height: 567px;
+    display: flex;
+    .text__decor {
+        justify-content: end;
+        align-items: end;
+    }
+}
+.hero-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: translateY(170px);
+    mix-blend-mode: difference;
+    padding: 60px 0 0 0;
+    h1 {
+        color: $color__org__red;
+        text-transform: uppercase;
+        font-size: 80px;
+    }
+    h5 {
+        color: $color__grey;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 14px;
+        margin: 0 0 0 5px;
+        transform: translateY(-35px);
+    }
+    p {
+        color: $color__grey;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: 75%;
+        margin: 0 0 0 5px;
+        transform: translateY(-25px);
+    }
+}
+.text__decor {
+    color: $color__grey;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 90px;
+    height: 18px;
+    transform: translate(39em, 43em);
+}
+.glitch {
+    position: relative;
+}
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.glitch::before {
+    left: 4px;
+    text-shadow: -31px 0 rgb(0, 174, 255);
+    background: black;
+}
+.glitch::after {
+    left: -3px;
+    text-shadow: -3px 0 blue;
+    background: black;
+}
+.glitch::before {
+    clip: rect(54px, 250px, 56px, 40px);
+}
+@keyframes noise-anim {
+    0% {
+    clip-path: inset(40% 0 61% 0);
+    }
+    20% {
+    clip-path: inset(92% 0 1% 0);
+    }
+    40% {
+    clip-path: inset(43% 0 1% 0);
+    }
+    60% {
+    clip-path: inset(25% 0 58% 0);
+    }
+    80% {
+    clip-path: inset(54% 0 7% 0);
+    }
+    100% {
+    clip-path: inset(58% 0 43% 0);
+    }
+}
+.glitch::before {
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+    
+.glitch::after {    
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+.line {
+    position: relative;
+    width: 5em;
+    margin: 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 150%;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+/*Animation*/
+.anim-typewriter {
+    animation: typewriter 4s steps(100) 1s 1 normal both;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 5em;
+    }
+}
+
+/* Section End */
+
+/* Анимация кругового текста */ 
+#rotated  {
+    color: $color__white;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 12px;
+}
+.rotatethis {
+    animation: rotating 20s linear infinite;
+    z-index: 1;
+}
+@keyframes rotating  {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Additional Section */ 
+
+.section__add {
+	width: 100%;
+	height: 200px;
+	background-color: $color__grey;
+	display: grid;
+	grid-template-columns: repeat(2, 5fr);
+	grid-template-rows: 3fr;
+}
+.add__arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add__arrow img {
+	width: 100px;
+    height: 100px;
+    padding-bottom: 20px;
+}
+.arrow__btn {
+	animation-name: animateArrow;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes animateArrow {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(25px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+.section__text {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        color:$background;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 7px;
+        margin: 0 0 25px 0;
+    }
+    p {
+        color:$background;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Additional Section End */
