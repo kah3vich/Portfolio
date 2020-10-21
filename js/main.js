@@ -1,0 +1,1 @@
+const circleType = new CircleType(document.getElementById('rotated'));
