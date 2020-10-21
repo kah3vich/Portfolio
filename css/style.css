@@ -8,6 +8,11 @@
   font-family: 'Roboto';
 }
 
+.shell__header {
+  width: 100%;
+  height: 100vh;
+}
+
 /* Header */
 .container__header {
   width: 100%;
@@ -109,7 +114,6 @@
   display: grid;
   -ms-grid-columns: 3fr 3fr;
       grid-template-columns: 3fr 3fr;
-  /* ПЕРЕДЕЛАТЬ ВЫСОТУ */
 }
 
 .section__circle {
@@ -189,7 +193,6 @@
 }
 
 .hero-title {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,14 +200,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-transform: translateY(170px);
-          transform: translateY(170px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   mix-blend-mode: difference;
   padding: 60px 0 0 0;
-  /* ПЕРЕДЕЛАТЬ */
 }
 
 .hero-title h1 {
@@ -234,19 +234,6 @@
   margin: 0 0 0 5px;
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
-}
-
-.text__decor {
-  color: grey;
-  font-family: Helvetica;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  width: 90px;
-  height: 18px;
-  -webkit-transform: translate(39em, 43em);
-          transform: translate(39em, 43em);
-  /* ПЕРЕДЕЛАТЬ */
 }
 
 .glitch {
