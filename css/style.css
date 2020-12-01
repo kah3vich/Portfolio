@@ -506,3 +506,8 @@
 }
 
 /* Additional Section End */
+
+.menu__link {
+  counter-increment: number;
+  content: counter(number) '. ';
+}
