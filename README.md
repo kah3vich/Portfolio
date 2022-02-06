@@ -1,5 +1,7 @@
-# Port
-### Данная работа была тестовым варинатом для будующего проекта - PORTFOLIO
-PS: работа была выполнена в июне 2020 года
+# [beta] Protfolio
+### This work was a test version for a future project - PORTFOLIO
+PS: the work was completed in June 2020
 
-## Чтобы посмотреть на работу нажмите на одну восьмую - [⅛](https://kah3vich.github.io/Portfolio/)
+<br />
+
+### To see the work, click on one eighth - [⅛](https://kah3vich.github.io/Portfolio/)
